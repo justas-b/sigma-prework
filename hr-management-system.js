@@ -18,14 +18,14 @@ function returnDatabase() {
 }
 
 function promptAddOrRemove() {
-  let userInput = prompt("Do you want to add or remove a person from the database?");
+  let userInput = prompt("Do you want to add or remove a person from the database?\nPlease type in add or remove:");
   
   if(userInput === null) {
     return null;
   } else {
     while(userInput.toLowerCase() !== "add" && userInput.toLowerCase() !== "remove") {
       alert("You have entered an invalid option!");
-      userInput = prompt("Do you want to add or remove a person from the database?");
+      userInput = prompt("Do you want to add or remove a person from the database?\nPlease type in add or remove:");
     }
     return userInput.toLowerCase();
   }
